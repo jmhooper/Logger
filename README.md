@@ -3,10 +3,8 @@
 This class is used to log output because I don't like dealing with System.out.prinln() everywhere.
 The logger prints using the following methods:
 
-`
-  Logger.log(Class class, String string); // This will print in the On mode
-  Logger.log(Class class, String string, boolean isVerbose); // This allows you tell a message to print in just verbose mode by passing true for isVerbose
-`
+`Logger.log(Class class, String string); // This will print in the On mode`
+`Logger.log(Class class, String string, boolean isVerbose); // This allows you tell a message to print in just verbose mode by passing true for isVerbose`
 
 ## Logger Status
 
@@ -22,11 +20,10 @@ Off is suggested for when you are deploying the software and On is recommended f
 
 The loggers status can be set with the following:
 
-`
-  Logger.setStatus(String status); // Accepted string values are (case insensitive) "On", "Off", and "Verbose". Will throw an IllegalArgumentException if you get it wrong.
-  Logger.turnOn() // Turns the logger on
-  Logger.turnOff() // Turns the logger off
-`
+`Logger.setStatus(String status); // Accepted string values are (case insensitive) "On", "Off", and "Verbose". Will throw an IllegalArgumentException if you get it wrong.`
+`Logger.turnOn() // Turns the logger on`
+`Logger.turnOff() // Turns the logger off`
+
   
 ## Logger Scope
 
@@ -37,10 +34,8 @@ If the Logger is On then it will print messages from a class in the scope like i
 
 To add or remove a class from the scope use the following methods
 
-`
-  Logger.addClassToScope(Class c);
-  Logger.removeClassFromrScope(Class c);
-`
+`Logger.addClassToScope(Class c);`
+`Logger.removeClassFromrScope(Class c);`
 
 #### Notes on classes already/not in the scope
 
