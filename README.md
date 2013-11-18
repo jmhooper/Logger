@@ -4,10 +4,10 @@ This class is used to log output because I don't like dealing with System.out.pr
 The logger prints using the following methods:
 
 ```java
-  // This will print in the On mode<br />
-  Logger.log(Class class, String string);<br />
-  <br />
-  // This allows you tell a message to print in just verbose mode by passing true for isVerbose<br />
+  // This will print in the On mode
+  Logger.log(Class class, String string);
+  
+  // This allows you tell a message to print in just verbose mode by passing true for isVerbose
   Logger.log(Class class, String string, boolean isVerbose);
 ```
 
@@ -26,13 +26,13 @@ Off is suggested for when you are deploying the software and On is recommended f
 The loggers status can be set with the following:
 
 ```java
-  // Accepted string values are (case insensitive) "On", "Off", and "Verbose". Will throw an IllegalArgumentException if you get it wrong.<br />
-  Logger.setStatus(String status);<br />
-  <br />
-  // Turns the logger on.<br />
-  Logger.turnOn();<br />
-  <br />
-  // Turns the logger off.<br />
+  // Accepted string values are (case insensitive) "On", "Off", and "Verbose". Will throw an IllegalArgumentException if you get it wrong.
+  Logger.setStatus(String status);
+  
+  // Turns the logger on.
+  Logger.turnOn();
+  
+  // Turns the logger off.
   Logger.turnOff();
 ```
 
@@ -47,7 +47,7 @@ If the Logger is On then it will print messages from a class in the scope like i
 To add or remove a class from the scope use the following methods
 
 ```java
-  Logger.addClassToScope(Class c);<br />
+  Logger.addClassToScope(Class c);
   Logger.removeClassFromrScope(Class c);
 ```
 
